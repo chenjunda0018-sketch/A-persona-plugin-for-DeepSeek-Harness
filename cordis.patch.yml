@@ -1,0 +1,9 @@
+# The bundle patch dsh applies when this package is installed into a profile
+# (`dsh plugin --profile <name> add <this package>`). Off by default: drop the
+# `disabled` field (or set it to false) to switch styles on.
+- insert:
+    - id: yayan
+      name: '@deepseek-ai/dsh-plugin-yayan'
+      disabled: true
+      config:
+        persona: maoyu
